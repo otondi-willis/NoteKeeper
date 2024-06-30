@@ -68,6 +68,16 @@ public class Frame {
         JMenuItem selectItem = new JMenuItem("Select All");
         selectItem.addActionListener(e -> Edit.selectAll());
         editmenu.add(selectItem);
+
+        //Creating format menu items
+        JMenuItem boldItem = new JMenuItem("Bold");
+        formatmenu.add(boldItem);
+
+        JMenuItem italicItem = new JMenuItem("Italics");
+        formatmenu.add(italicItem);
+
+        JMenuItem fontColorItem = new JMenuItem("fontColor");
+        formatmenu.add(fontColorItem);
     }
 
 }
