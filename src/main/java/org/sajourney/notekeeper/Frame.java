@@ -79,6 +79,7 @@ public class Frame {
         formatmenu.add(italicItem);
 
         JMenuItem fontColorItem = new JMenuItem("fontColor");
+        fontColorItem.addActionListener(e -> FormatMenu.fontColor());
         formatmenu.add(fontColorItem);
     }
 

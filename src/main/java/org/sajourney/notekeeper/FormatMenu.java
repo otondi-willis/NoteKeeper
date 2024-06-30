@@ -1,5 +1,6 @@
 package org.sajourney.notekeeper;
 
+import javax.swing.*;
 import java.awt.*;
 
 public class FormatMenu {
@@ -13,6 +14,13 @@ public class FormatMenu {
         Font currentFont = Frame.textArea.getFont();
         Font italicfont = currentFont.deriveFont(Font.ITALIC);
         Frame.textArea.setFont(italicfont);
+
+    }
+    public static void fontColor(){
+        Color selectedColor = JColorChooser.showDialog(null, "Select Font Color", Color.BLACK);
+        if (selectedColor != null){
+            Frame.textArea.setForeground(selectedColor);
+        }
 
     }
 }
