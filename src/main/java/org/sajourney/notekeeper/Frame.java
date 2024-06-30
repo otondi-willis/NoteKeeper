@@ -59,6 +59,7 @@ public class Frame {
         JMenuItem saveAs = new JMenuItem("Save As");
         saveAs.addActionListener( e -> FileMenu.saveAs());
         filemenu.add(saveAs);
+        saveAs.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F1, KeyEvent.CTRL_DOWN_MASK));
 
         //Creating edit menu items
         JMenuItem cutItem = new JMenuItem("Cut");
