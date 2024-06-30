@@ -34,6 +34,19 @@ public class Frame {
         menu.add(editmenu);
         JMenu formatmenu = new JMenu("Format");
         menu.add(formatmenu);
+
+        //Creating the file menu items
+        JMenuItem New = new JMenuItem("New");
+        filemenu.add(New);
+
+        JMenuItem open = new JMenuItem("Open");
+        filemenu.add(open);
+
+        JMenuItem save = new JMenuItem("Save");
+        filemenu.add(save);
+
+        JMenuItem saveAs = new JMenuItem("Save As");
+        filemenu.add(saveAs);
     }
 
 }
