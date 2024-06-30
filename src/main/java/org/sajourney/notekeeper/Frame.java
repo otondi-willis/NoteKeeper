@@ -49,6 +49,7 @@ public class Frame {
         JMenuItem open = new JMenuItem("Open");
         open.addActionListener( e -> FileMenu.openFile());
         filemenu.add(open);
+        open.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, KeyEvent.CTRL_DOWN_MASK));
 
         JMenuItem save = new JMenuItem("Save");
         save.addActionListener( e -> FileMenu.save());
