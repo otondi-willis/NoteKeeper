@@ -51,6 +51,19 @@ public class Frame {
         JMenuItem saveAs = new JMenuItem("Save As");
         saveAs.addActionListener( e -> FileMenu.saveAs());
         filemenu.add(saveAs);
+
+        //Creating edit menu items
+        JMenuItem cutItem = new JMenuItem("Cut");
+        editmenu.add(cutItem);
+
+        JMenuItem copyItem = new JMenuItem("Copy");
+        editmenu.add(copyItem);
+
+        JMenuItem pasteItem = new JMenuItem("Paste");
+        editmenu.add(pasteItem);
+
+        JMenuItem selectItem = new JMenuItem("Select All");
+        editmenu.add(selectItem);
     }
 
 }
