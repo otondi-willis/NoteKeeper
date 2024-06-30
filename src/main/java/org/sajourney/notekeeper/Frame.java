@@ -6,6 +6,7 @@ public class Frame {
     public static void main(String[] args){
         createFrame();
         createTextarea();
+        createMenu();
         frame.setVisible(true);
     }
     public static void createFrame(){
@@ -22,6 +23,13 @@ public class Frame {
         scrollbar.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
         scrollbar.setBorder(BorderFactory.createEmptyBorder());
         frame.add(scrollbar);
+    }
+    public static void createMenu(){
+        JMenuBar menu = new JMenuBar();
+        frame.setJMenuBar(menu);
+
+        JMenu filemenu = new JMenu("File");
+        menu.add(filemenu);
     }
 
 }
