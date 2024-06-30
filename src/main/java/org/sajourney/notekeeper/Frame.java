@@ -71,6 +71,7 @@ public class Frame {
 
         //Creating format menu items
         JMenuItem boldItem = new JMenuItem("Bold");
+        boldItem.addActionListener(e -> FormatMenu.bold());
         formatmenu.add(boldItem);
 
         JMenuItem italicItem = new JMenuItem("Italics");
