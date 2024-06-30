@@ -20,6 +20,7 @@ public class Frame {
 
         JScrollPane scrollbar = new JScrollPane(textArea);
         scrollbar.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+        scrollbar.setBorder(BorderFactory.createEmptyBorder());
         frame.add(scrollbar);
     }
 
