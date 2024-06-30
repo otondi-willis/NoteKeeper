@@ -14,6 +14,9 @@ public class Frame {
         frame.setSize(500, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        ImageIcon icon = new ImageIcon("C:/Users/ADMIN/Desktop/banner.PNG");
+        frame.setIconImage(icon.getImage());
+
     }
     public static void createTextarea(){
         textArea = new JTextArea();
