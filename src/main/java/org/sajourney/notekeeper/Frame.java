@@ -62,6 +62,7 @@ public class Frame {
         editmenu.add(copyItem);
 
         JMenuItem pasteItem = new JMenuItem("Paste");
+        pasteItem.addActionListener(e -> Edit.paste());
         editmenu.add(pasteItem);
 
         JMenuItem selectItem = new JMenuItem("Select All");
