@@ -9,4 +9,10 @@ public class FormatMenu {
         Frame.textArea.setFont(boldfont);
 
     }
+    public static void italic(){
+        Font currentFont = Frame.textArea.getFont();
+        Font italicfont = currentFont.deriveFont(Font.ITALIC);
+        Frame.textArea.setFont(italicfont);
+
+    }
 }

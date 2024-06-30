@@ -75,6 +75,7 @@ public class Frame {
         formatmenu.add(boldItem);
 
         JMenuItem italicItem = new JMenuItem("Italics");
+        italicItem.addActionListener(e -> FormatMenu.italic());
         formatmenu.add(italicItem);
 
         JMenuItem fontColorItem = new JMenuItem("fontColor");
