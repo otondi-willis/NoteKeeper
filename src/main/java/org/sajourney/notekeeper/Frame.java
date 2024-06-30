@@ -1,5 +1,7 @@
 package org.sajourney.notekeeper;
 import javax.swing.*;
+import java.awt.event.KeyEvent;
+
 public class Frame {
     public static JFrame frame;
     public static JTextArea textArea;
@@ -42,6 +44,7 @@ public class Frame {
         JMenuItem New = new JMenuItem("New");
         New.addActionListener( e -> FileMenu.newFile());
         filemenu.add(New);
+        New.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, KeyEvent.CTRL_DOWN_MASK));
 
         JMenuItem open = new JMenuItem("Open");
         open.addActionListener( e -> FileMenu.openFile());
