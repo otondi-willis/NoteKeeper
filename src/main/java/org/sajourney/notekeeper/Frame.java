@@ -58,6 +58,7 @@ public class Frame {
         editmenu.add(cutItem);
 
         JMenuItem copyItem = new JMenuItem("Copy");
+        copyItem.addActionListener(e -> Edit.copy());
         editmenu.add(copyItem);
 
         JMenuItem pasteItem = new JMenuItem("Paste");
