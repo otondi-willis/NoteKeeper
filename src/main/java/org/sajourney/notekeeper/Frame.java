@@ -54,6 +54,7 @@ public class Frame {
 
         //Creating edit menu items
         JMenuItem cutItem = new JMenuItem("Cut");
+        cutItem.addActionListener(e -> Edit.cut());
         editmenu.add(cutItem);
 
         JMenuItem copyItem = new JMenuItem("Copy");
