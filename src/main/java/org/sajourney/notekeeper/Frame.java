@@ -30,6 +30,10 @@ public class Frame {
 
         JMenu filemenu = new JMenu("File");
         menu.add(filemenu);
+        JMenu editmenu = new JMenu("Edit");
+        menu.add(editmenu);
+        JMenu formatmenu = new JMenu("Format");
+        menu.add(formatmenu);
     }
 
 }
