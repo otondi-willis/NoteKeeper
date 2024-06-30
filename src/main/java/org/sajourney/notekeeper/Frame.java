@@ -45,6 +45,7 @@ public class Frame {
         filemenu.add(open);
 
         JMenuItem save = new JMenuItem("Save");
+        save.addActionListener( e -> FileMenu.save());
         filemenu.add(save);
 
         JMenuItem saveAs = new JMenuItem("Save As");

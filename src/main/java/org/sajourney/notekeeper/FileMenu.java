@@ -40,7 +40,7 @@ public class FileMenu {
         }
     }
     public static void saveAs(){
-        FileDialog filedialog = new FileDialog(frame, "Open File", FileDialog.SAVE);
+        FileDialog filedialog = new FileDialog(frame, "Save", FileDialog.SAVE);
         filedialog.setVisible(true);
 
         if (filedialog.getFile() != null){
@@ -49,6 +49,21 @@ public class FileMenu {
             filePath = directory + fileName;
             Frame.frame.setTitle(fileName);
 
+            try{
+                FileWriter writer = new FileWriter(filePath);
+                writer.write(Frame.textArea.getText());
+                writer.close();
+            }
+            catch (IOException e){
+                System.out.println("File cannot be saved");
+            }
+        }
+    }
+    public static void save(){
+        if (fileName == null){
+            saveAs();
+        }
+        else {
             try{
                 FileWriter writer = new FileWriter(filePath);
                 writer.write(Frame.textArea.getText());
