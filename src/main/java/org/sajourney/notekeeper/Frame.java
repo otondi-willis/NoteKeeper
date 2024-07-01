@@ -80,6 +80,7 @@ public class Frame {
         JMenuItem selectItem = new JMenuItem("Select All");
         selectItem.addActionListener(e -> Edit.selectAll());
         editmenu.add(selectItem);
+        selectItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_A, KeyEvent.CTRL_DOWN_MASK));
 
         //Creating format menu items
         JMenuItem boldItem = new JMenuItem("Bold");
