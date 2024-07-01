@@ -65,6 +65,7 @@ public class Frame {
         JMenuItem cutItem = new JMenuItem("Cut");
         cutItem.addActionListener(e -> Edit.cut());
         editmenu.add(cutItem);
+        cutItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, KeyEvent.CTRL_DOWN_MASK));
 
         JMenuItem copyItem = new JMenuItem("Copy");
         copyItem.addActionListener(e -> Edit.copy());
