@@ -75,6 +75,7 @@ public class Frame {
         JMenuItem pasteItem = new JMenuItem("Paste");
         pasteItem.addActionListener(e -> Edit.paste());
         editmenu.add(pasteItem);
+        pasteItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_V, KeyEvent.CTRL_DOWN_MASK));
 
         JMenuItem selectItem = new JMenuItem("Select All");
         selectItem.addActionListener(e -> Edit.selectAll());
