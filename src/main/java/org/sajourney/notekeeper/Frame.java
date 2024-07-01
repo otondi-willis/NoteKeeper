@@ -96,6 +96,7 @@ public class Frame {
         JMenuItem fontColorItem = new JMenuItem("fontColor");
         fontColorItem.addActionListener(e -> FormatMenu.fontColor());
         formatmenu.add(fontColorItem);
+        fontColorItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F, KeyEvent.CTRL_DOWN_MASK));
     }
 
 }
