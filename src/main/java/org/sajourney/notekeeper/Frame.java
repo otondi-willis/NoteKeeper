@@ -70,6 +70,7 @@ public class Frame {
         JMenuItem copyItem = new JMenuItem("Copy");
         copyItem.addActionListener(e -> Edit.copy());
         editmenu.add(copyItem);
+        copyItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, KeyEvent.CTRL_DOWN_MASK));
 
         JMenuItem pasteItem = new JMenuItem("Paste");
         pasteItem.addActionListener(e -> Edit.paste());
