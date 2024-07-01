@@ -86,6 +86,7 @@ public class Frame {
         JMenuItem boldItem = new JMenuItem("Bold");
         boldItem.addActionListener(e -> FormatMenu.bold());
         formatmenu.add(boldItem);
+        boldItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_F1, KeyEvent.CTRL_DOWN_MASK));
 
         JMenuItem italicItem = new JMenuItem("Italics");
         italicItem.addActionListener(e -> FormatMenu.italic());
